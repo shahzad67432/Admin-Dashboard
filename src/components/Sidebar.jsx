@@ -40,18 +40,19 @@ const Sidebar = () => {
             {links.map((item) => (
               <div key={item.title}>
                 <p className="text-gray-400 mt-4 m-3 uppercase">{item.title}</p>
-                {item.links.map((Link) => (
+                {item.links.map((link) => (
                   <NavLink
-                    to={`/${Link.name}`}
-                    key={Link.name}
-                    onClick={() => {}}
-                    className={({ isActive }) => {
-                      isActive ? activeLink : normalLink;
-                    }}
-                  >
-                    {Link.icon}
-                    <span className="Capitalize">{Link.name}</span>
-                  </NavLink>
+                  to={`/${link.name}`}
+                  key={link.name}
+                  onClick={()=>{}}
+                  style={({ isActive }) => ({
+                    
+                  })}
+                  className={({ isActive }) => (isActive ? activeLink : normalLink)}
+                >
+                  {link.icon}
+                  <span className="capitalize ">{link.name}</span>
+                </NavLink>
                 ))}
               </div>
             ))}
