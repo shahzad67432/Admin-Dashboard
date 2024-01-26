@@ -48,7 +48,7 @@ const App = ()=>{
 
                 {/* Pages */}
                 <Route path='/orders' element={<Orders/>} />
-                <Route path='/employes' element={<Employees/>} />
+                <Route path='/employees' element={<Employees/>} />
                 <Route path='/customers' element={<Customers/>} />
 
                 {/* Apps */}
